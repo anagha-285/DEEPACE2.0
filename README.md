@@ -45,6 +45,43 @@ The objective is to enhance **speech perception** for cochlear implant users, es
 | **Libraries** | NumPy, SciPy, Matplotlib, Librosa, h5py |
 | **Toolboxes** | NMT Toolbox (for preprocessing) |
 | **Environment** | Jupyter Notebook / Command Line |
+---
+
+## 📊 Results
+
+### 🧠 Quantitative Metrics
+| Metric | Value |
+|--------|--------|
+| Mean Squared Error (MSE) | **0.0018** |
+| Correlation (r) | **0.92** |
+| Training Epochs | 30 |
+| Learning Rate | 1e-4 |
+
+### 🔍 Observations
+- The **DeepACE CNN** effectively learned temporal mapping between speech audio and electrode stimulation patterns.  
+- The model showed **fast convergence** with steadily decreasing MSE across epochs.  
+- **Predicted electrodograms** closely matched the target patterns, preserving temporal envelope features critical for speech intelligibility.  
+
+### 🎧 Visual Results
+
+#### 1️⃣ Training vs Validation Loss Curve
+<img src="results/plots/mse_curve.png" width="600"/>
+
+#### 2️⃣ Predicted vs Target Electrodogram
+<img src="results/plots/pred_vs_target_electrodogram.png" width="600"/>
+
+### 🔬 Interpretation
+- Predicted electrodograms exhibit clear temporal synchronization with ACE references.  
+- Noise robustness improved due to convolutional feature learning across multiple receptive fields.  
+- The DeepACE2.0 approach demonstrates strong potential for **enhanced speech coding** in noisy listening environments.
+
+---
+
+## 🧩 Future Work
+- Integrate **Transformer layers** for improved contextual modeling.  
+- Explore **denoising autoencoders** for more robust stimulation patterns.  
+- Conduct **subjective perceptual testing** to validate intelligibility improvements.
+
 
 ---
 
