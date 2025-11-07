@@ -1,0 +1,30 @@
+# Core libraries
+numpy==1.26.4
+scipy==1.13.1
+matplotlib==3.9.2
+pandas==2.2.2
+
+# Deep learning framework
+torch==2.3.0
+torchaudio==2.3.0
+torchvision==0.18.0
+
+# Data handling
+h5py==3.11.0
+scikit-learn==1.5.0
+
+# Visualization and plotting
+seaborn==0.13.2
+tqdm==4.66.4
+
+# MATLAB file support
+mat73==0.62
+pymatreader==0.0.32
+
+# Audio and signal processing
+librosa==0.10.2.post1
+soundfile==0.12.1
+
+# Optional (for notebooks and reproducibility)
+jupyter==1.0.0
+notebook==7.2.2
